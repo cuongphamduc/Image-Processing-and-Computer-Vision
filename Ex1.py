@@ -77,4 +77,4 @@ autolabel(rects1)
 ax.set_title('Exercise 1')
 
 plt.show()
-fig.savefig('fig/Exercise1')
+fig.savefig('figures/Exercise1')

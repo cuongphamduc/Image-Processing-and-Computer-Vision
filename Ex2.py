@@ -50,4 +50,4 @@ ax.set_zlabel('B Value')
 ax.set_title('Exercise 2')
 
 plt.show()
-fig.savefig('fig/Exercise2')
+fig.savefig('figures/Exercise2')

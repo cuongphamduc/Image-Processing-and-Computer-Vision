@@ -45,10 +45,10 @@ ax.scatter(xs2, ys2, marker='^')
 
 ax.set_xlabel('a Value')
 ax.set_ylabel('b Value')
-ax.set_title('Exercise 3')
+ax.set_title('Exercise 3-1')
 
 plt.show()
-fig.savefig('fig/Exercise3')
+fig.savefig('figures/Exercise3-1')
 
 np.delete(skincolors, 0, 1)
 np.delete(nonskincolors, 0, 1)
@@ -67,8 +67,16 @@ logregr.score(test_color, test_target)
 
 image_colors = f.reshape((-1, 3))
 predict_skin = logregr.predict(image_colors).reshape(f.shape[:2])
+
+fig, ax = plt.subplots()
+
 plt.subplot(121)
 plt.imshow(plt.imread('images/FacePhoto/0520962400.jpg'))
+
 plt.subplot(122)
 plt.imshow(predict_skin)
+
+plt.suptitle('Exercise 3-2')
+
 plt.show()
+fig.savefig('figures/Exercise3-2')
